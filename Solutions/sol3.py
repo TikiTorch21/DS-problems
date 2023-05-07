@@ -1,24 +1,30 @@
-sen = "The-Stealth-Warrior"
+s = "The-Stealth-Warrior"
 
-def to_camel_case_a1(sen):
-	if "_" in sen:
-		split_sen = sen.split("_")
-	else:
-		split_sen = sen.split("-")
+def to_camel_case_a1(s):
+	if s == '':
+		return s
 
-	camel_sen = ""
+	# Replace all delimters by blank space
+	s = s.replace("_", "-").replace('-', " ")
+	s = s.split()
+	new_s = ''
 
-	camel_sen += split_sen[0]
+	# The first word would be the same as the input, so ignoring. 
+	for s_w in s[1:]:
+		new_s += s_w[0].upper() + s_w[1:]
 
-	for word_num in range(1, len(split_sen)):
-		if split_sen[word_num][0].islower():
-			camel_sen += split_sen[word_num][0].upper()
-			camel_sen += split_sen[word_num][1:len(split_sen[word_num])]
-		else:
-			camel_sen += split_sen[word_num]
+	return s[0] + new_s
 
-	return camel_sen
+print(f"Using approach 1:\n\t{to_camel_case_a1(s)}")
 
 
+def to_camel_case_a2(s):
+	s = s.replace("_", " ").replace("-", " ")
+	s = s.split()
 
-print(f"Using approach 1:\n\t{to_camel_case_a1(sen)}")
+	if len(s)==0:
+		return s
+	# using the capitilize funcion in conjunction with join() to make everything into a continous string
+	return s[0] + ''.join(i.capitalize() for i in s[1:])
+
+print(f"Using approach 2:\n\t{to_camel_case_a2(s)}")
