@@ -20,7 +20,7 @@ def bin_conv_a2(d):
 
 	while d_temp > 0:
 		rem = d_temp%2
-		binary += str(rem)
+		binary = str(rem) + binary
 		d_temp //=2
 
 	return int(binary) if d>0 else int(binary)*-1
