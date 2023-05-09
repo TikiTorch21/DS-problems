@@ -6,7 +6,7 @@ Problems Statistics - Contains statistics problems. [No problems yet]
 
 images/ - contains images that are useful for the problems
 
-Solutions - contains solutions to problems
+Solutions/ - contains solutions to problems
 
 ______________________________________________________________________________
 
