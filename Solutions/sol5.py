@@ -1,4 +1,7 @@
-def sum_dig_pow(a, b):
+def sum_dig_pow_a1(a, b):
+
+	# Version 1 more efficient
+
 	res = []
 
 	for number in range(a, b+1):
@@ -12,4 +15,4 @@ def sum_dig_pow(a, b):
 			res.append(number)
 	return res
 
-print(f"Using approach 1:\n\t{sum_dig_pow(1, 10)}")
+print(f"Using approach 1:\n\t{sum_dig_pow_a1(1, 10)}")
