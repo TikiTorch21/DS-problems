@@ -36,11 +36,3 @@ def number_length_a2(num):
 		num //= 10
 	return count
 print(f"Using approach 2:\n\t{number_length_a2(20)}")
-
-
-
-
-
-
-
-
