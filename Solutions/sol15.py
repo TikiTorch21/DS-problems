@@ -14,6 +14,8 @@ print(f"Using approach 1:\n\t{check_palin_a1('attpptta')}")
 
 
 def check_palin_a2(s):
+
+	# Recursive version 
 	punc = [",", ".", "!", "?", ";", ":", " "]
 	new_s = ''.join([i for i in s if i not in punc])
 
