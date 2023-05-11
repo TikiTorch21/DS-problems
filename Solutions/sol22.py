@@ -1,3 +1,6 @@
+l = [0, 3, 5, 2, 0, 5, 1, 56, 0]
+
+
 def shift_zero_a1(l):
 	for idx, n in enumerate(l):
 		if n==0:
@@ -5,7 +8,7 @@ def shift_zero_a1(l):
 			l.insert(0, 0)
 	return l
 
-print(f"Using approach 1:\n\t{shift_zero_a1([0, 3, 5, 2, 0, 5, 1, 56, 0])}")
+print(f"Using approach 1:\n\t{shift_zero_a1(l)}")
 
 def shift_zero_a2(l):
 	index_ = 0
@@ -24,4 +27,33 @@ def shift_zero_a2(l):
 
 	return l[index_:] + l[:index_]
 
-print(f"Using approach 2\n\t{shift_zero_a2([0, 3, 5, 2, 0, 5, 1, 56, 0])}")
+print(f"Using approach 2\n\t{shift_zero_a2(l)}")
+
+def shift_zero_a3(l):
+	s = ""
+
+	for num in l:
+		if num == 0:
+			s+= "0"
+	for n_num in l:
+		if n_num != 0:
+			s += f"{n_num}"
+
+	l = [int(c) for c in s]
+
+	return l
+
+print(f"Using approach 3:\n\t{shift_zero_a3(l)}")
+
+def shift_zero_a4(l):
+	for _ in range(0, len(l)):
+		for idx in range(0, len(l)):
+			if l[idx] == 0 and idx != 0 and l[idx-1] != 0:
+				temp = l[idx-1]
+				l[idx-1] = l[idx]
+				l[idx] = temp
+
+
+	return l
+
+print(f"Using approach 4:\n\t{shift_zero_a4(l)}")
