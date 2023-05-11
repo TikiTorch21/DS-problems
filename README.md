@@ -11,3 +11,4 @@ Solutions/ - contains solutions to problems
 ______________________________________________________________________________
 
 NOTE - SOME SOLUTIONS ONLY HAVE 1 APPROACH
+* Solution 21 has no solution yet - working on it 
