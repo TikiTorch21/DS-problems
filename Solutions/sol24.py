@@ -1,0 +1,11 @@
+def running_sum(li):
+	run_sum = []
+	s = 0
+	for n in li:
+		s += n
+		run_sum.append(s)
+
+
+	return run_sum
+
+print(f"Using approach 1:\n\t{running_sum([1, 1, 1, 1])}, {running_sum([1, 2, 3, 4])}")
