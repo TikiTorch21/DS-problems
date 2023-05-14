@@ -1,6 +1,22 @@
 def sum_dig_pow_a1(a, b):
+	"""
+	Function to find numbers in a range
+	that fulfills a specific property 
+	in the problem.
 
-	# Version 1 more efficient
+	Parameters
+	----------
+	a : int
+		Starting number.
+	b : int
+		Ending number
+
+	Returns
+	-------
+	list
+		List of numbers that fulfill the specific property
+		shown in the problem. 
+	"""
 
 	res = []
 
@@ -16,3 +32,12 @@ def sum_dig_pow_a1(a, b):
 	return res
 
 print(f"Using approach 1:\n\t{sum_dig_pow_a1(1, 10)}")
+
+############################################################
+
+"""
+Solutions
+---------
+Using approach 1:
+	[1, 2, 3, 4, 5, 6, 7, 8, 9]
+"""
