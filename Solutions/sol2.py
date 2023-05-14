@@ -1,6 +1,21 @@
 nums = [2, 4, 6, 8, 10, 3]
 
 def find_outlier_a1(nums):
+	"""
+	Function to find an outlier 
+	in a list.
+	(APPROACH 1)
+
+	Parameters
+	----------
+	nums : list
+		List of numbers.
+
+	Returns
+	-------
+	int
+		Outlier of the list of numbers.
+	"""
 	par0 = nums[0]%2
 
 	for x in nums:
@@ -9,6 +24,21 @@ def find_outlier_a1(nums):
 print(f"Using approach 1:\n\t{find_outlier_a1(nums)}")
 
 def find_outlier_a2(nums):
+	"""
+	Function to find an outlier 
+	in a list.
+	(APPROACH 2)
+
+	Parameters
+	----------
+	nums : list
+		List of numbers.
+
+	Returns
+	-------
+	int
+		Outlier of the list of numbers.
+	"""
 	even_nums = list(filter(lambda x: x%2==0, nums))
 	odd_nums = list(filter(lambda x: x%2!=0, nums))
 

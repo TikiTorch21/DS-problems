@@ -1,6 +1,21 @@
 s = "The-Stealth-Warrior"
 
 def to_camel_case_a1(s):
+	"""
+	Function to convert a string
+	to camel case.
+	(APPROACH 1)
+
+	Paremeters
+	----------
+	s : str
+		string input
+
+	Returns
+	-------
+	str 
+		Camel-case version of input string
+	"""
 	if s == '':
 		return s
 
@@ -19,6 +34,21 @@ print(f"Using approach 1:\n\t{to_camel_case_a1(s)}")
 
 
 def to_camel_case_a2(s):
+	"""
+	Function to convert a string
+	to camel case.
+	(APPROACH 2)
+
+	Paremeters
+	----------
+	s : str
+		string input
+
+	Returns
+	-------
+	str 
+		Camel-case version of input string
+	"""
 	s = s.replace("_", " ").replace("-", " ")
 	s = s.split()
 
