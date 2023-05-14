@@ -58,3 +58,14 @@ def to_camel_case_a2(s):
 	return s[0] + ''.join(i.capitalize() for i in s[1:])
 
 print(f"Using approach 2:\n\t{to_camel_case_a2(s)}")
+
+#########################################################################
+
+"""
+Solutions
+-----------
+Using approach 1:
+	TheStealthWarrior
+Using approach 2:
+	TheStealthWarrior
+"""

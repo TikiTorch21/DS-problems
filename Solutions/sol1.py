@@ -82,3 +82,25 @@ def phone_num_a3(nums):
 	return phone_num
 
 print(f"Using approach 3:\n\t{phone_num_a2(nums)}")
+
+
+#########################################################################
+
+"""
+Solutions
+-----------
+Using approach 1:
+	(123) 456-7890
+Using approach 2: 
+	(123) 456-7890
+Using approach 3:
+	(123) 456-7890
+"""
+
+
+
+
+
+
+
+

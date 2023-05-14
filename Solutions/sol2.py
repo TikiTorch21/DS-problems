@@ -47,3 +47,13 @@ def find_outlier_a2(nums):
 	return even_nums[0]
 
 print(f"Using approach 2:\n\t{find_outlier_a2(nums)}")
+#########################################################################
+
+"""
+Solutions
+-----------
+Using approach 1:
+	3
+Using approach 2:
+	3
+"""
