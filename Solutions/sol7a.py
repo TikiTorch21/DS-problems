@@ -1,6 +1,19 @@
 def bin_conv_a1(d):
+	"""
+	Function to convert a
+	decimal number to a binary number. 
+	(APPROACH 1 - using in-built function)
 
-	# Using in-built function
+	Parameters
+	----------
+	d : int
+		Input number
+
+	Returns
+	-------
+	str
+		Binary version of input number.
+	"""
 
 	d_abs = abs(d)
 
@@ -13,7 +26,21 @@ print(f"Using approach 1:\n\t{bin_conv_a1(-356)}")
 
 def bin_conv_a2(d):
 
-	# Without using in-built function
+	"""
+	Function to convert a
+	decimal number to a binary number. 
+	(APPROACH 2 - manually)
+
+	Parameters
+	----------
+	d : int
+		Input number
+
+	Returns
+	-------
+	str
+		Binary version of input number.
+	"""
 
 	d_temp = abs(d)
 	binary = ""
@@ -26,3 +53,14 @@ def bin_conv_a2(d):
 	return int(binary) if d>0 else int(binary)*-1
 
 print(f"Using approach 2:\n\t{bin_conv_a2(-356)}")
+
+##################################################
+
+"""
+Solutions
+---------
+Using approach 1:
+	-101100100
+Using approach 2:
+	-101100100
+"""

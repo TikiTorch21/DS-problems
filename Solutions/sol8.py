@@ -9,6 +9,21 @@ board = [[5, 3, 4, 6, 7, 8, 9, 1, 2],
 	[3, 4, 5, 2, 8, 6, 1, 7, 9]]
 
 def valid_solution(board):
+	"""
+	Function to check for a valid 
+	sudoku solution
+
+	Parameters
+	----------
+	board : list
+		Sudoku board.
+
+	Returns
+	-------
+	bool
+		True if all the nested functions
+		are True
+	"""
 	def verify_nums(board):
 		for seq in board:
 			for index, num in enumerate(seq):
@@ -31,3 +46,12 @@ def valid_solution(board):
 
 
 print(f"Using approach 1:\n\t{valid_solution(board)}")
+
+######################################################
+
+"""
+Solutions
+---------
+Using approach 1:
+	True
+"""
