@@ -29,5 +29,6 @@ print(f"Using approach 1:\n\t{total_overs(162)}")
 """
 Solutions
 ---------
-
+Using approach 1:
+	27.2
 """
