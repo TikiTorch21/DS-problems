@@ -1,4 +1,15 @@
 def operation(operation, inp1, inp2=None):
+	"""
+	Function to perform one operation:
+		1) Sum of digits in a number
+		2) Find a raised to the power b
+		3) Reverse a string
+
+	Parameters
+	----------
+	operation : int
+		operation type
+	"""
 	def sum_digits(n):
 		if n<10:
 			return n 
@@ -26,3 +37,12 @@ def operation(operation, inp1, inp2=None):
 		return reverse_rec(inp1)
 
 print(f"Using approach 1:\n\t{operation(2, 4, 3)}")
+
+###################################################
+
+"""
+Solutions
+---------
+Using approach 1:
+	64
+"""

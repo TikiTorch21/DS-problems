@@ -29,3 +29,12 @@ def divided_by(y):
 	return lambda x: x//y
 
 print(f"Using approach 1:\n\t{eight(divided_by(four()))}")
+
+##########################################################
+
+"""
+Solutions
+---------
+Using approach 1:
+	2
+"""

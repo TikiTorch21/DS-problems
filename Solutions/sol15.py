@@ -1,7 +1,21 @@
 def check_palin_a1(s):
+	"""
+	Function to check if input string 
+	(excluding puncuation or special chars) 
+	is a palindrome. 
+	(APPROACH 1 - Non-recursive)
 
-	# Non-recursive version 
+	Parameters
+	----------
+	s : str
+		input string
 
+	Returns
+	-------
+	str
+		"palindrome" if input string is a palindome
+		and "not palindrome" if input string is not a palindrome. 
+	"""
 	punc = [",", ".", "!", "?", ";", ":", " "]
 	new_s = ''.join([i for i in s if i not in punc])
 
@@ -14,8 +28,23 @@ print(f"Using approach 1:\n\t{check_palin_a1('attpptta')}")
 
 
 def check_palin_a2(s):
+	"""
+	Function to check if input string 
+	(excluding puncuation or special chars) 
+	is a palindrome. 
+	(APPROACH 2 - Recursive)
 
-	# Recursive version 
+	Parameters
+	----------
+	s : str
+		input string
+
+	Returns
+	-------
+	str
+		"palindrome" if input string is a palindome
+		and "not palindrome" if input string is not a palindrome. 
+	"""
 	punc = [",", ".", "!", "?", ";", ":", " "]
 	new_s = ''.join([i for i in s if i not in punc])
 
@@ -27,3 +56,14 @@ def check_palin_a2(s):
 	return check_palin_a2(s[1:-1])
 
 print(f"Using approach 2:\n\t{check_palin_a2('attpptta')}")
+
+###########################################################
+
+"""
+Solutions
+---------
+Using approach 1:
+	palindrome
+Using approach 2:
+	palindrome
+"""
