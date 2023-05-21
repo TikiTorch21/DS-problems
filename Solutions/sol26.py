@@ -1,4 +1,21 @@
 def iso(s, c):
+	"""
+	Function to determine if two input strings
+	are isomorphic.
+
+	Parameters
+	----------
+	s : str
+		first input string
+	c : str
+		second input string
+
+	Returns
+	-------
+	bool
+		True or False value depending on 
+		if two input strings are isomorphic. 
+	"""
 	s_dict = {}
 	c_dict = {}
 
@@ -22,3 +39,12 @@ def iso(s, c):
 
 
 print(f"Using approach 1:\n\t{iso('paper', 'title')}")
+
+######################################################
+
+"""
+Solutions
+---------
+Using approach 1:
+	True
+"""
