@@ -1,23 +1,25 @@
 import numpy as np
 
+
 def compute():
-	"""
-	Function to compute the matrix product
-	of a 4x2 and 2x4 matrix. 
+    """
+    Function to compute the matrix product
+    of a 4x2 and 2x4 matrix.
 
-	Parameters
-	----------
-	NONE
+    Parameters
+    ----------
+    NONE
 
-	Returns
-	-------
-	numpy array
-		product of 4x2 and 2x4 matrix
-	"""
-	m1 = np.array([[1,4], [2,5], [4,2], [6,8]])
-	m2 = np.array([[1,4,5,9],[2,5,3,1]])
-	product = np.dot(m1, m2)
-	return product
+    Returns
+    -------
+    numpy array
+            product of 4x2 and 2x4 matrix
+    """
+    m1 = np.array([[1, 4], [2, 5], [4, 2], [6, 8]])
+    m2 = np.array([[1, 4, 5, 9], [2, 5, 3, 1]])
+    product = np.dot(m1, m2)
+    return product
+
 
 print(f"Using approach 1:\n\t{compute()}")
 
