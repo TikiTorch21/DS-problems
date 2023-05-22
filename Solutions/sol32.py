@@ -1,4 +1,18 @@
 def pick_peaks(lis):
+	"""
+	Function to return the positions and the values of the peaks
+	of an input array.
+
+	Parameters
+	----------
+	lis : list
+		input list
+
+	Returns
+	-------
+	str
+		Positions and peaks of input array. 
+	"""
 	peaks = []
 	pos = []
 	a_peak = lis[1]
@@ -17,3 +31,12 @@ def pick_peaks(lis):
 	return f"pos: {pos}, peaks: {peaks}"
 
 print(f"Using approach 1:\n\t{pick_peaks([1, 2, 3, 6, 4, 4, 1, 2, 3, 2, 1])}")
+
+##############################################################################
+
+"""
+Solutions
+---------
+Using approach 1:
+        pos: [3, 5, 8], peaks: [6, 4, 3]
+"""
