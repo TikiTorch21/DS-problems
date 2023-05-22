@@ -1,62 +1,66 @@
 l = ["A", "A", "A", "B", "B", "C", "A"]
+
+
 def getWinner_a1(l):
-	"""
-	Function to find the winner
-	from an input list of ballots. 
-	(APPROACH 1)
+    """
+    Function to find the winner
+    from an input list of ballots.
+    (APPROACH 1)
 
-	Parameters
-	----------
-	l : list
-		input list
-	
-	Returns
-	-------
-	str
-		election winner. 
-	"""
-	d = dict()
-	length = len(l)//2
+    Parameters
+    ----------
+    l : list
+            input list
 
-	for name in l:
-		if name in d.keys():
-			d[name]+= 1
-		else:
-			d[name] = 1
+    Returns
+    -------
+    str
+            election winner.
+    """
+    d = dict()
+    length = len(l) // 2
 
-	greatest = 0 
-	winner = list(filter(lambda x: d[x]>length, d.keys()))
+    for name in l:
+        if name in d.keys():
+            d[name] += 1
+        else:
+            d[name] = 1
 
-	if len(winner) == 0:
-		return "No Winner"
+    greatest = 0
+    winner = list(filter(lambda x: d[x] > length, d.keys()))
 
-	return winner[0]
+    if len(winner) == 0:
+        return "No Winner"
+
+    return winner[0]
+
 
 print(f"Using approach 1:\n\t{getWinner_a1(l)}")
 
 
 def getWinner_a2(ballots):
-	"""
-	Function to find the winner
-	from an input list of ballots. 
-	(APPROACH 2)
+    """
+    Function to find the winner
+    from an input list of ballots.
+    (APPROACH 2)
 
-	Parameters
-	----------
-	l : list
-		input list
-	
-	Returns
-	-------
-	str
-		election winner. 
-	"""
-	candidates = {candidate:ballots.count(candidate) for candidate in set(ballots)}
+    Parameters
+    ----------
+    l : list
+            input list
 
-	for candidate in candidates:
-		if candidates[candidate]>len(ballots)/2:
-			return candidate
-	
+    Returns
+    -------
+    str
+            election winner.
+    """
+    candidates = {candidate: ballots.count(candidate) for candidate in set(ballots)}
+
+    for candidate in candidates:
+        if candidates[candidate] > len(ballots) / 2:
+            return candidate
+
+
 print(f"Using approach 2:\n\t{getWinner_a2(l)}")
 
 ################################################
