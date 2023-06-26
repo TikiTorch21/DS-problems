@@ -8,7 +8,7 @@ def zero_or_one(n, array):
     n and array, and return a list of length n.
     List contains number with max amount of occurences
     for each column.
-
+    
     Parameters
     ----------
     n : int
