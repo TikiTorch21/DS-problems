@@ -2,7 +2,7 @@ Problems Math - Contains math problems. [Solutions not yet added]
 
 Problems Python - Contains Python problems and excercises. 
 
-Problems Statistics - Contains statistics problems. [No problems yet]
+Problems Statistics - Contains statistics problems.
 
 images/ - contains images that are useful for the problems
 
